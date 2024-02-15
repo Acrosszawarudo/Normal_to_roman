@@ -4,12 +4,10 @@ def normal_to_roman(n):
     
     roman_numerals = {
         1000: "M",
-        999: "CMXCIX",
         900: "CM",
         500: "D",
         400: "CD",
         100: "C",
-        99: "XCIX",
         90: "XC",
         50: "L",
         40: "XL",
@@ -23,6 +21,6 @@ def normal_to_roman(n):
     roman_numeral = ""
     for value, numeral in sorted(roman_numerals.items(), reverse=True):
         while n >= value:
-            roman_numeral = numeral
+            roman_numeral += numeral
             n -= value
     return roman_numeral 

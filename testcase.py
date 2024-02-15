@@ -34,7 +34,18 @@ class TestRomanConverter(unittest.TestCase):
         print("Convertion of 500 to Roman:", normal_to_roman(500))
         
         self.assertEqual(normal_to_roman(999), "CMXCIX")
-        print("Convertion of 990 to Roman:", normal_to_roman(999))
+        print("Convertion of 999 to Roman:", normal_to_roman(999))
+        
+    def test_convert_four_digit(self):
+        print("Test Convertion of four digits:")
+        self.assertEqual(normal_to_roman(1000), "M")
+        print("Convertion of 1000 to Roman:", normal_to_roman(1000))
+        
+        self.assertEqual(normal_to_roman(1500), "MD")
+        print("Convertion of 1500 to Roman:", normal_to_roman(1500))
+        
+        self.assertEqual(normal_to_roman(3999), "MMMCMXCIX")
+        print("Convertion of 3999 to Roman:", normal_to_roman(3999))
           
         
 if __name__ == "__main__":
