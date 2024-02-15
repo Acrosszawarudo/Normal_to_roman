@@ -46,6 +46,14 @@ class TestRomanConverter(unittest.TestCase):
         
         self.assertEqual(normal_to_roman(3999), "MMMCMXCIX")
         print("Convertion of 3999 to Roman:", normal_to_roman(3999))
+        
+    def test_convert_edges(self):
+        print("Test Convertion of the edges:")
+        self.assertEqual(normal_to_roman(0), "Invalid number, insert a number betwen 1 to 3999")
+        print("Convertion of 0 to Roman:", normal_to_roman(0))
+        
+        self.assertEqual(normal_to_roman(4000), "Invalid number, insert a number betwen 1 to 3999")
+        print("Convertion of 4000 to Roman:", normal_to_roman(4000))
           
         
 if __name__ == "__main__":
