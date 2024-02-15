@@ -8,6 +8,12 @@ class TestRomanConverter(unittest.TestCase):
         self.assertEqual(normal_to_roman(1), "I")
         print("Convertion of 1 to Roman:", normal_to_roman(1))
         
+        self.assertEqual(normal_to_roman(5), "V")
+        print("Convertion of 5 to Roman:", normal_to_roman(5))
+        
+        self.assertEqual(normal_to_roman(9), "IX")
+        print("Convertion of 9 to Roman:", normal_to_roman(9))
+        
         
 if __name__ == "__main__":
    unittest.main()
