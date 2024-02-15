@@ -24,6 +24,17 @@ class TestRomanConverter(unittest.TestCase):
         
         self.assertEqual(normal_to_roman(99), "XCIX")
         print("Convertion of 99 to Roman:", normal_to_roman(99))
+        
+    def test_convert_triple_digit(self):
+        print("Test Convertion of triple digit:")
+        self.assertEqual(normal_to_roman(100), "C")
+        print("Convertion of 100 to Roman:", normal_to_roman(100))
+        
+        self.assertEqual(normal_to_roman(500), "D")
+        print("Convertion of 500 to Roman:", normal_to_roman(500))
+        
+        self.assertEqual(normal_to_roman(999), "CMXCIX")
+        print("Convertion of 990 to Roman:", normal_to_roman(999))
           
         
 if __name__ == "__main__":

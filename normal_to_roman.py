@@ -4,6 +4,7 @@ def normal_to_roman(n):
     
     roman_numerals = {
         1000: "M",
+        999: "CMXCIX",
         900: "CM",
         500: "D",
         400: "CD",
