@@ -19,8 +19,8 @@ def normal_to_roman(n):
     }
     
     roman_numeral = ""
-    for value, numeral in sorted(roman_numerals.items(), reversed=True):
+    for value, numeral in sorted(roman_numerals.items(), reverse=True):
         while n >= value:
             roman_numeral = numeral
             n -= value
-        return roman_numeral 
+    return roman_numeral 
